@@ -2,6 +2,9 @@
 전기회로 도안을 그리기 위한 (figma 와 비슷한) 웹 브라우저 기반 svg 에디터 입니다.
 프론트엔드 에디터 개발과 관리 기능 백엔드 API(직원 로그인,도안 관리,파일 업로드 등) 개발을 담당하였습니다.
 
+개발 기간 : 2022/03 ~ 2023/05 (중도 퇴사)
+기여도 : 90% (디자인과 css를 제외한 모든 개발 작업 진행)
+
 ## 기술 스택
 ### Front-end
 * React
@@ -16,7 +19,7 @@
 * Ubuntu
 * Nginx
 
-## 담당 기능
+## 주요 기능
 
 
 ![main](https://github.com/pizza7311/portfolio/blob/main/2022/etm-sd/images/main.png)
@@ -38,3 +41,12 @@
 ### 커스텀 단축키 지정
 ![customShortcuts](https://github.com/pizza7311/portfolio/blob/main/2022/etm-sd/images/shortCuts.gif)
 에디터의 툴에 등록된 단축키를 사용자가 직접 지정하여 사용할수있는 기능입니다.
+
+### 객체 변형 기능
+![detailSelectExample](https://github.com/pizza7311/portfolio/blob/main/2022/etm-sd/images/detailSelectExample.webp)  
+**(이해를 위한 예시용 이미지)**  
+svg를 구성하고있는 path와 point를 직접 선택해여 요소를 변형시킬수 있는 기능입니다. 어도비 일러스트레이터에서 '직접 선택' 이라는 이름의 기능을 해당 프로젝트에 구현하였습니다.
+
+
+## 개발중 겪은 문제들과 해결 과정
+
