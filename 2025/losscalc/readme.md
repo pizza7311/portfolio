@@ -1,7 +1,7 @@
 ## losscalc
 수익형 서비스 개발과 운영하기의 첫걸음으로써 손실율을 입력하면 복구에 필요한 상승율을 보여주는 간단한 계산기 입니다.  
 궁극적인 목표는 광고를 통한 수익 창출을 목표로 `기획부터 개발~배포까지 전반적인 과정`을 직접 수행한 프로젝트 입니다.  
-링크: [www.losscalc.app](www.losscalc.app)
+링크: [https://www.losscalc.app/recovery-calculator](https://www.losscalc.app/recovery-calculator)
 
 ## 기술 스택
 ### Front-end
