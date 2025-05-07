@@ -5,9 +5,13 @@
 
 ## 기술 스택
 ### Front-end
-* Next.js V15
+* Next.js V14
 * Tailwind
 * Google Analytics
+* visx
+### Back-end
+* Nest.js
+* Prisma(mysql)
 ### Deployment
 * AWS Cloudfront
 * AWS Route53
@@ -24,6 +28,26 @@
 ### 유입을 위한 전략
 지속성 확보와 새로운 유입을위한 마케팅 전략으로 단순한 계산 기능만 제공하는것이 입력한 수치에따라 이미지를 띄워주며 실제 사용자에게 웃음과 공감을 제공하는 감성적인 전략을 세웠습니다.  
 
+## 주요 기능 및 확장
+초기 MVP였던 손실율 복구 계산기 외에도, 실제 사용자 니즈와 제 개인적인 투자 경험을 바탕으로 기능을 확장했습니다.  
+**특히 레버리지 ETF 투자자들이 자주 겪는 의문을 해소할 수 있도록 시각적 도구와 종목 정리를 중심으로 구성했습니다.**  
+### 레버리지 시뮬레이션
+![leverage-simulation](https://github.com/pizza7311/portfolio/blob/main/2025/losscalc/images/leverage-simulation.png)  
+[레버리지 시뮬레이션 소개 페이지](https://losscalc.app/leverage-simulation/about)  
+레버리지 ETF를 투자할때 발생하는 손실과 수익을 시각적으로 설명하기 위한 시뮬레이터를 개발했습니다.  
+사용자는 원하는 시나리오를 입력하고, 기초 자산의 변화에 따라 레버리지 ETF가 어떻게 움직이는지 직관적으로 확인할 수 있습니다.  
+### 레버리지 목록 차트
+![image](https://github.com/user-attachments/assets/35341aec-419d-4bdd-9a53-174b3c7ca9df)  
+[레버리지 ETF 목록 페이지](https://losscalc.app/leverage-ticker-list)  
+투자자들이 자주 찾는 레버리지 종목을 테이블 형태로 정리했습니다.  
+현재는 프론트 단에서 static하게 표시되지만, 내부적으로는 Nest.js 기반의 API 서버에서 Yahoo Finance 데이터를 주기적으로 수집하여 DB에 저장하고 있으며, 내부 운영 도구로 사용 중입니다.
+
+* 자동 종가 수집 cron
+* 주식-레버리지 관계 매핑 로직
+* 신규 종목 자동 추가 기능
+  
+![tickers](https://github.com/pizza7311/portfolio/blob/main/2025/losscalc/images/tickers.png)  
+이 이미지는 아직 개발중인 기능의 모습이지만 추후 주가 데이터를 활용하는 기능에 사용할수있도록 지속적으로 데이터를 수집중입니다.  
 ## 프로젝트 후기
 이 프로젝트는 개발자로써 기술과 능력에만 집중하는것이 아닌 수익화를 목표로 `서비스 기획부터 배포 및 반응 평가까지의 모든 프로세스를 직접 경험하는 실험적인 프로젝트`의 첫걸음이었습니다.  
 저는 실제로 많은 기능에만 집중하여 개발 기간이 길어지고 많은 시간과 노력을 쏟았지만 반응이 미미하거나 또는 완성하지 못하고 실패로 끝나는 여러 프로젝트들을 봐왔습니다. 
